@@ -1,5 +1,3 @@
-prune <- function(x, ...) UseMethod("prune")
-
 #' Prune a lm object.
 #'
 #' Removes the environment from an lm object.
@@ -9,6 +7,11 @@ prune <- function(x, ...) UseMethod("prune")
 #' @export
 #' @family lm pruners
 #' @seealso [stats::lm()]
+prune <- function(x, ...) {
+  UseMethod("prune")
+}
+
+#' @export
 prune.lm <- function(x, ...){
   residue <- attributes(x$terms)
   stopifnot(is.list(residue))

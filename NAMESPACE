@@ -3,3 +3,4 @@
 S3method(prune,lm)
 export(fbind)
 export(fcount)
+export(prune)
