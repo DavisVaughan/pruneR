@@ -1,13 +1,25 @@
 Package: pruneR
-Title: What the Package Does (One Line, Title Case)
+Title: Model Pruner
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Authors@R: c(
+    person(given = "Joyce",
+           family = "Cahoon",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "joyce@rstudio.com"),
+    person(given = "Davis",
+           family = "Vaughan",
+           role = "aut",
+           email = "davis@rstudio.com"),
+    person(given = "Max",
+           family = "Kuhn",
+           role = "aut",
+           email = "max@rstudio.com"))
+Description: Reduce the size of modeling objects that are saved to disk.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0)
+Imports: 
+    forcats
